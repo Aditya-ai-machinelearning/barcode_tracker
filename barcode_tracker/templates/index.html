@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Barcode Tracker</title></head>
+<body>
+  <h2>New Instrument Entry</h2>
+  <form action="/submit" method="post">
+    <label>Description:</label><input type="text" name="description" required><br>
+    <label>Customer Name:</label><input type="text" name="customer" required><br>
+    <input type="submit" value="Generate Barcode">
+  </form>
+  <a href="/scan">Scan Barcode</a> | <a href="/track">Track Instruments</a>
+</body>
+</html>

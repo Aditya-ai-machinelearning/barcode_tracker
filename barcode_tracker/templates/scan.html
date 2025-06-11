@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Scan Barcode</title></head>
+<body>
+  <h2>Update Instrument Stage</h2>
+  <form method="post">
+    <label>Barcode Code:</label><input name="code" required><br>
+    <label>Stage:</label>
+    <select name="stage">
+      <option value="inward">Inward</option>
+      <option value="calibration">Calibration</option>
+      <option value="qc">QC</option>
+      <option value="documentation">Documentation</option>
+      <option value="billing">Billing</option>
+      <option value="dispatch">Dispatch</option>
+    </select><br>
+    <input type="submit" value="Update">
+  </form>
+  <a href="/">Back</a>
+</body>
+</html>

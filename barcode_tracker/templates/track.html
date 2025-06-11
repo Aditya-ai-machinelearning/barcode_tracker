@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Track Instruments</title></head>
+<body>
+  <h2>Instrument Tracking</h2>
+  <table border="1">
+    <tr>
+      <th>Code</th><th>Description</th><th>Customer</th><th>Created</th>
+      <th>Inward</th><th>Calibration</th><th>QC</th><th>Documentation</th>
+      <th>Billing</th><th>Dispatch</th>
+    </tr>
+    {% for inst in instruments %}
+    <tr>
+      {% for col in inst %}
+      <td>{{ col }}</td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </table>
+  <br><a href="/">Back</a>
+</body>
+</html>
