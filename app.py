@@ -7,4 +7,5 @@ def home():
     return "✅ Hello from Barcode Tracker!"
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # Make it publicly accessible on Render
+    app.run(host="0.0.0.0", port=10000)
