@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tracked Barcodes</title>
+</head>
+<body>
+    <h1>Scanned Barcodes</h1>
+    <table border="1">
+        <tr><th>ID</th><th>Code</th><th>Description</th><th>Time</th></tr>
+        {% for b in barcodes %}
+        <tr>
+            <td>{{ b[0] }}</td>
+            <td>{{ b[1] }}</td>
+            <td>{{ b[2] }}</td>
+            <td>{{ b[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Back to Entry</a>
+</body>
+</html>
